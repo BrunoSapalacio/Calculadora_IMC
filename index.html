@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora IMC</h1>
+    </header>
+    <section>
+        <div id="content">
+            <div id="topo">
+                <div class="box">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="box b2">
+                    <div class="box trinta">
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+                    <div class="box trinta">
+                        <label for="altura">Altura</label>
+                        <input type="number" name="altura" id="altura" onkeypress="$(this).mask('0.00')">
+                    </div>
+                    <div class="box trinta">
+                            <label for="peso">Peso</label>
+                            <input type="number" name="peso" id="peso">
+                    </div>
+                </div>
+                <div class="box b2">
+                    <div class="box b2 trinta">
+                        <label for="sexo">Sexo</label>
+                    </div>    
+                    <div class="box b1 trinta">
+                        <input type="radio" id="feminino" name="sexo" value="Feminino" onChange="getValue(this)">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div class="box b1 trinta">
+                        <input type="radio" id="masculino" name="sexo" value="Masculino" onChange="getValue(this)">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                </div>
+            <button type="button" onclick="calcular()">Calcular IMC</button>
+        </div>
+        <div id="res">
+            <h2>FICHA TÉCNICA</h2>
+            <p class="nome">Nome: Bruno Sapalacio</p>
+            <p class="idade">Idade: 25 anos</p>
+            <p class="altura">Altura: 1,80 Metros</p>
+            <p class="peso">Peso: 67 Kg</p>
+            <p class="sexo">Sexo: Masculino</p>
+            <p class="imc">Parabéns! O seu IMC é 20.60 kg/m2.</p>
+            <p class="class">Classificação: Normal.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; Bruno Sapalacio</p>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script> <!-- Formatador de inputs-->
+</body>
+</html>

@@ -1,0 +1,116 @@
+html {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+body {
+    background-color: #399936;
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.198);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    color: white;
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-flow: column;
+}
+.b1, .b2 {
+    flex-direction: row;
+}
+.b2 { 
+    justify-content: space-between;
+}
+.trinta {
+    width: 30%;
+}
+.center {
+    align-items: center;
+}
+#feminino, #masculino {
+    margin-right: 5px;
+}
+button {
+    height: 50px;
+    background: #399936;
+    border: 3px solid #539951;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15pt;
+    transition:all 0.3s ease;
+}
+button:hover {
+    background: white;
+    color: #539951;
+    cursor: pointer;
+}
+input {
+    height: 20px; 
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-bottom: 1px solid #539951;
+    font-size: 13pt;
+}
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+h2 {
+    margin-top: 0;
+    background: #399936;
+    padding: 10px;
+    color: #f7f7f7;
+    font-size: 18pt;
+}
+#content, #topo {
+   display: flex;
+   flex-direction: column;
+}
+#content {
+    width: 90%;
+}
+#topo {
+    height: 200px;
+    justify-content: space-around;
+}
+#content, #res {
+    margin: 15px 0px;
+}
+#b-finalizar {
+    height: 40px;
+}
+#res{
+    display: none;
+    text-align: center;
+    border: 1px solid #399936;
+    border-radius: 5px;
+}
+.imc {
+    background: #f3f3f3;
+}
+.imc, .class {
+    padding: 10px;
+    margin: 0;
+}
+.class {
+    color: white;
+}

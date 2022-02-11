@@ -10,7 +10,9 @@ git clone https://github.com/BrunoSapalacio/Calculadora_IMC.git
 
 # Entrar numa IDE de sua preferência
 
-# Executar o servidor ou usar um puglin que criar um servidor
+# Executar o servidor ou usar um puglin que cria um servidor
+
+# Abra o seu navegador e acesse http://localhost:5500/ ou em uma porta de sua preferência.
 ```
 
 # Prints

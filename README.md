@@ -2,7 +2,7 @@
 Sistema básico que calcula o IMC a partir dos dados fornecidos pelo usuário.
 
 # Propósito
-O sistema foi criado como base de estudo para fixar os conhecimentos sobre objetos em javascript, elementos DOM e Flexbox CSS.
+O sistema foi criado como base de estudo para fixar os conhecimentos sobre **objetos em javascript, elementos DOM** e **Flexbox CSS**.
 
 # Como rodar
 
